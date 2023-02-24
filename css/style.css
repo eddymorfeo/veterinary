@@ -1,0 +1,298 @@
+/* Fuente para testos H2 */
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Reseteadores */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* Logo Principal */
+img{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+/* Enlaces Navegación Principal */
+ul{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "chivo Mono", monospace;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+ul:hover li a{
+    color: #BFD7B5;
+    font-size: 36px;
+}
+
+ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.2;
+    filter: blur(1px);
+}
+
+
+/* Logo y Titulo Principal */
+.logo-titulo{
+    display: flex;    
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.titulo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-left: 200px;
+    color: #BFD7B5;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "chivo Mono", monospace;
+}
+
+.titulo-principal:hover{
+    font-size: 51px;
+    transition: 0.5s;
+}
+
+
+/* Imagen Principal del Index */
+.img-fondo img{   
+    padding: 5px 50px 5px 50px; /* arriba derecha abajo izquierda */
+    height: 400px;
+    width: 100%;
+}
+
+
+/* Parrafos */
+.parrafo{
+    padding: 25px 50px 25px 50px; /* arriba derecha abajo izquierda */
+    text-align: left;
+    font-weight: bold;
+}
+
+.parrafo-direccion{
+    line-height: 0%;
+    padding: 0px 50px 25px 50px; /* arriba derecha abajo izquierda */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Google Maps */
+.titulo{
+    line-height: 0%;
+    padding: 25px 50px 10px 50px; /* arriba derecha abajo izquierda */
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.google-maps{
+    text-align: center;
+    padding: 5px 50px 25px 50px; /* arriba derecha abajo izquierda */
+}
+
+/* Footer */
+
+.pie-pagina{
+    width: 100%;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+/* Cards */
+.container1{
+    width: 100%;
+    max-width: 1200px;    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translatey(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 330px;
+    height: 180px;
+}
+
+.card h4{
+    font-weight: 600;
+}
+
+.card p{
+    padding: 0 1rem 1rem 1rem ;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3498db;
+}
+
+
+/* Formulario */
+.form{
+    width: 600px;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.form h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.botons{    
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 22px;
+    width: 100%;
+    text-transform: uppercase;  
+    padding: 12px;  
+}
+
+.botons:hover{
+    background-color: red;
+}
+
+
+/* Media Querys */
+@media only screen and (max-width: 1200px) {
+    .foo1 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        background-color: lightblue;
+    }
+  }
+
+  
+@media screen and (max-width:815px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
