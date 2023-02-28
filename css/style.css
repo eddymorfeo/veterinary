@@ -278,21 +278,87 @@ ul:hover li a:not(:hover){
 
 
 /* Media Querys */
-@media only screen and (max-width: 1200px) {
-    .foo1 {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        background-color: lightblue;
+@media only screen and (max-width: 1270px) {
+    .logo-titulo .titulo-principal { 
+        display: flex;    
+        padding-left: 180px;
     }
-  }
+  }  
 
   
-@media screen and (max-width:815px){
+@media screen and (max-width:1024px){
     .pie-pagina .grupo-1{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+
+    .logo-titulo .titulo-principal{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width:970px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .logo-titulo{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:780px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .logo-titulo{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .logo-titulo{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .logo-titulo{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px;
     }
 }
