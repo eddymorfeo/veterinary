@@ -88,6 +88,11 @@ ul:hover li a:not(:hover){
     width: 100%;
 }
 
+/* Boton de avance y retroceso de Carrousel */
+.colorbtn{
+    background-color: black;
+}
+
 
 /* Parrafos */
 .parrafo{
