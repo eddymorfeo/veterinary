@@ -277,10 +277,6 @@ ul:hover li a:not(:hover){
     padding: 12px;  
 }
 
-.botons:hover{
-    background-color: red;
-}
-
 
 /* Media Querys */
 @media only screen and (max-width: 1270px) {
@@ -292,12 +288,6 @@ ul:hover li a:not(:hover){
 
   
 @media screen and (max-width:1024px){
-    .pie-pagina .grupo-1{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
 
     .logo-titulo .titulo-principal{
         padding-left: 100px;
@@ -305,43 +295,47 @@ ul:hover li a:not(:hover){
 }
 
 @media screen and (max-width:970px){
-    .pie-pagina .grupo-1{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+    
+    .logo-titulo .titulo-principal{
+        padding-left: 50px;
     }
 
-    .logo-titulo{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
+    ul li a{
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .logo-titulo .titulo-principal{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    ul li a{
         padding: 0px;
     }
 }
 
-@media screen and (max-width:780px){
-    .pie-pagina .grupo-1{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+@media screen and (max-width:850px){
+    ul{
+        display: flex;
+        flex-direction: column;        
     }
-
-    .logo-titulo{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 0px;
+    .parrafo-direccion{       
+        padding: 10px;
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:610px){
     .pie-pagina .grupo-1{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
-        padding: 35px 0px;
+        padding-left: 10px;
     }
 
     .logo-titulo{
@@ -349,6 +343,12 @@ ul:hover li a:not(:hover){
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 0px;
+    }
+
+    .formulario{
+        display: flex;
+        text-align: center;
+        padding: 20px;
     }
 }
 
@@ -357,7 +357,7 @@ ul:hover li a:not(:hover){
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
-        padding: 35px 0px;
+        padding-left: 10px;
     }
 
     .logo-titulo{
