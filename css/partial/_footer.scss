@@ -1,0 +1,84 @@
+.pie-pagina{
+    width: 100%;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 250px;
+                }
+            }
+
+            h2{
+                color: #fff;
+                margin-bottom: 25px;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
+            }
+        }
+
+        .red-social{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                margin-right: 10px;
+                background-color: #0d2033;
+                text-align: center;
+                transition: all 300ms ease;
+
+                &:hover{
+                    color: aqua;
+                }
+            }
+        }
+    }
+
+    .grupo-2{
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+
+        small{
+            font-size: 15px;
+        }
+    }
+}
+
+$redes: (
+    facebook:#fff,
+    instagram: #fff,
+    youtube: #fff,
+    twitter: #fff
+);
+
+@each $redsocial, $colordelared in $redes{
+    .fa-#{$redsocial}{
+        color: $colordelared;
+    }
+}

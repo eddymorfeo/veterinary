@@ -1,0 +1,40 @@
+.formulario{
+    .form{
+        width: 600px;
+        background: #bdc3c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 30px;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+
+        h2{
+            font-size: 22px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        }
+
+        .controls{
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #1f53c5;
+            font-family: 'calibri';
+            font-size: 18px;
+        }
+
+        .botons{
+            border-radius: 4px;
+            margin-bottom: 16px;
+            font-size: 22px;
+            width: 100%;
+            text-transform: uppercase;  
+            padding: 12px; 
+        }
+    }
+}
