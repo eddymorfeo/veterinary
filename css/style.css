@@ -36,6 +36,7 @@ nav ul:hover li a:not(:hover) {
   padding: 25px 50px 25px 50px; /* arriba derecha abajo izquierda */
   text-align: left;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .parrafo-direccion {
